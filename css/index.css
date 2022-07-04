@@ -52,6 +52,8 @@ h3 {
 
 .navlist li a {
   text-decoration: none;
+  color: #000;
+  font-size: 1rem;
 }
 
 .show-time {
