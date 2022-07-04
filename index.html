@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Awesome Books with ES6</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <h1>Awesome Books</h1>
+          <ul class="navlist">
+            <li><a href="#" id="list">List</a></li>
+            <li><a href="#" id="add-new">Add New</a></li>
+            <li><a href="#" id="contact-us">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <p class="show-time">Time</p>
+
+      <h2 class="main-title">All Awesome Books</h2>
+      <hr class="hr-line" />
+
+      <section class="book-display">
+        <h2>Books List</h2>
+      </section>
+
+      <section class="add-new hidden">
+        <form class="book-form">
+          <h2>Add New Book</h2>
+          <input
+            type="text"
+            placeholder="Enter Title of the Book"
+            class="form-title"
+          />
+          <input
+            type="text"
+            placeholder="Enter Author of the Book"
+            class="form-author"
+          />
+          <button type="button" class="btn btn-submit">Add</button>
+        </form>
+      </section>
+
+      <section class="contact-us hidden">
+        <h2>Contact Information</h2>
+        <p>
+          Do you have any question or you just want to say "Hello"? <br />You
+          can reach out to us
+        </p>
+        <ul>
+          <li>Our email info@booklist.com</li>
+          <li>Our Phone Number 0043586534422</li>
+          <li>Our address Moor Road 22, 84520, Lisbon, Portugal</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; Copyright</p>
+      </footer>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
