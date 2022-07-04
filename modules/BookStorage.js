@@ -1,5 +1,4 @@
 class BookStorage {
-  
   static saveData(bookArray) {
     localStorage.setItem('bookData', JSON.stringify(bookArray));
   }
@@ -9,4 +8,4 @@ class BookStorage {
   }
 }
 
-export {BookStorage};
+export { BookStorage };

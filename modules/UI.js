@@ -1,7 +1,6 @@
-import { BookStorage} from "../modules/BookStorage.js";
+import { BookStorage } from '../modules/BookStorage.js';
 
 class UI {
-
   static removeBook(e, btn, index, bookArray) {
     const bookDiv = e.target.parentElement;
     bookDiv.parentElement.removeChild(bookDiv);
@@ -38,7 +37,7 @@ class UI {
     const bookDisplay = document.querySelector('.book-display');
     const addBooksSection = document.querySelector('.add-new');
     const contactSection = document.querySelector('.contact-us');
-    
+
     if (id === 'list') {
       bookDisplay.classList.remove('hidden');
       addBooksSection.classList.add('hidden');
@@ -52,8 +51,7 @@ class UI {
       addBooksSection.classList.add('hidden');
       contactSection.classList.remove('hidden');
     }
-
   }
 }
 
-export {UI};
+export { UI };
