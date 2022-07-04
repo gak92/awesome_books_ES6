@@ -1,6 +1,7 @@
 import { Books } from "../modules/Books.js";
 import { BookStorage} from "../modules/BookStorage.js";
 import { UI } from "../modules/UI.js";
+import { DateTime } from "../modules/luxon.js";
 
 let bookArray = [];
 const btnSubmit = document.querySelector('.btn-submit');
@@ -43,3 +44,13 @@ const navList = document.querySelector('.navlist');
 navList.addEventListener('click', (e) => {
   UI.showSection(e.target.id);
 });
+
+// show Time
+const showTime = document.querySelector('.show-time');
+
+const displayTime = () => {
+  const dt = DateTime.now();
+  showTime.innerHTML = dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+}
+
+setInterval(displayTime, 1000);

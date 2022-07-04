@@ -54,6 +54,10 @@ h3 {
   text-decoration: none;
 }
 
+.show-time {
+  align-self: flex-end;
+}
+
 .main-title {
   font-size: 3rem;
 }
