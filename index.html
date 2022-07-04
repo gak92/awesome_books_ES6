@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js" defer></script>
-  <title>Awesome Books with ES6</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Awesome Books with ES6</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <h1>Awesome Books</h1>
+          <ul class="navlist">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Add New</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h2>All Awesome Books</h2>
+      <hr class="hr-line">
+
+      <section class="book-display">
+        <h2>Books List</h2>
+        <div class="book-div">
+          <h3 class="book-title-author">Book 01 By Author 01</h3>
+          <button class="btn btn-remove" type="button">Remove</button>
+        </div>
+        <div class="book-div">
+          <h3 class="book-title-author">Book 01 By Author 01</h3>
+          <button class="btn btn-remove" type="button">Remove</button>
+        </div>
+        <div class="book-div">
+          <h3 class="book-title-author">Book 01 By Author 01</h3>
+          <button class="btn btn-remove" type="button">Remove</button>
+        </div>
+      </section>
+
+      <section class="add-new">
+        <form class="book-form">
+          <h2>Add New Book</h2>
+          <input type="text" placeholder="Enter Title of the Book" class="form-title">
+          <input type="text" placeholder="Enter Author of the Book" class="form-author">
+          <button type="button" class="btn btn-submit">Add</button>
+        </form>
+      </section>
+
+      <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Do you have any question or you just want to say "Hello"? <br>You can reach out to us</p>
+        <ul>
+          <li>Our email info@booklist.com</li>
+          <li>Our Phone Number 0043586534422</li>
+          <li>Our address Moor Road 22, 84520, Lisbon, Portugal</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; Copyright</p>
+      </footer>
+    </div>
+  </body>
 </html>
