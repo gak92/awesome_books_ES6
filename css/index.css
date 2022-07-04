@@ -3,3 +3,122 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlist {
+  display: flex;
+  gap: 2rem;
+}
+
+.navlist li {
+  list-style-type: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.hr-line {
+  width: 10%;
+  border: 1px solid #000;
+}
+
+.book-display {
+  border: 1px solid #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.book-div {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new {
+  border: 2px solid #000;
+  width: 70%;
+  padding: 1rem;
+}
+
+.book-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-form input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+.book-form .btn-submit {
+  align-self: flex-end;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+
+.footer {
+  border: 1px solid #000;
+  max-width: 1100px;
+  width: 90%;
+  padding: 0.7rem 1rem;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
+}
