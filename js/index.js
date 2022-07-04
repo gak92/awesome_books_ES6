@@ -1,6 +1,6 @@
-import { Books } from '../modules/Books.js';
-import { BookStorage } from '../modules/BookStorage.js';
-import { UI } from '../modules/UI.js';
+import Books from '../modules/Books.js';
+import BookStorage from '../modules/BookStorage.js';
+import UI from '../modules/UI.js';
 import { DateTime } from '../modules/luxon.js';
 
 let bookArray = [];

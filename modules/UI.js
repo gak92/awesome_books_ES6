@@ -1,13 +1,11 @@
-import { BookStorage } from '../modules/BookStorage.js';
+import BookStorage from './BookStorage.js';
 
-class UI {
+export default class UI {
   static removeBook(e, btn, index, bookArray) {
     const bookDiv = e.target.parentElement;
     bookDiv.parentElement.removeChild(bookDiv);
 
-    bookArray = bookArray.filter((ele, idx) => {
-      return idx !== index;
-    });
+    bookArray = bookArray.filter((ele, idx) => idx !== index);
 
     BookStorage.saveData(bookArray);
     this.getBookList(bookArray);
@@ -53,5 +51,3 @@ class UI {
     }
   }
 }
-
-export { UI };
