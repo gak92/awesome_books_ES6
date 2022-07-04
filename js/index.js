@@ -37,3 +37,9 @@ btnSubmit.addEventListener('click', () => {
 if (BookStorage.getData() !== null) {
   UI.getBookList(BookStorage.getData());
 }
+
+// Navigation List EventListener
+const navList = document.querySelector('.navlist');
+navList.addEventListener('click', (e) => {
+  UI.showSection(e.target.id);
+});

@@ -33,6 +33,27 @@ class UI {
       });
     });
   }
+
+  static showSection(id) {
+    const bookDisplay = document.querySelector('.book-display');
+    const addBooksSection = document.querySelector('.add-new');
+    const contactSection = document.querySelector('.contact-us');
+    
+    if (id === 'list') {
+      bookDisplay.classList.remove('hidden');
+      addBooksSection.classList.add('hidden');
+      contactSection.classList.add('hidden');
+    } else if (id === 'add-new') {
+      bookDisplay.classList.add('hidden');
+      addBooksSection.classList.remove('hidden');
+      contactSection.classList.add('hidden');
+    } else if (id === 'contact-us') {
+      bookDisplay.classList.add('hidden');
+      addBooksSection.classList.add('hidden');
+      contactSection.classList.remove('hidden');
+    }
+
+  }
 }
 
 export {UI};
